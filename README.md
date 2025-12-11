@@ -16,7 +16,7 @@ A responsive recipe page for a Simple Omelette Recipe built with semantic HTML5 
 ### Links
 
 - Repository URL: [CTI-110_Final-Project](https://github.com/eleyob2/CTI-110_Final-Project)
-- Live Site: Open `index.html` in your browser
+- Live Site: Open [Elnatan Teaghes | Recipe page](https://eleyob2.github.io/CTI-110_Final-Project/)
 
 ## My process
 
