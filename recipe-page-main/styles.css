@@ -1,7 +1,7 @@
 body {
     background-color: #f3e5d8;
 	width: 100%;
-	font-family: 'Young Serif', serif;
+	font-family: "Young Serif", serif;
 	font-weight: 510;
 }
 
@@ -14,7 +14,8 @@ main{
     margin-bottom: 2.5%;
     size: 400px;
     align-items: center;
-	color: stone;
+	color: hsl(30, 10%, 34%);
+    font-weight: 505;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -25,8 +26,11 @@ img {
 }
 
 h1 {
+    font-family: 'Merriweather', serif;
     font-weight: 900;
+    color: black;
 }
+
 h2 {
 	color: hsl(14, 45%, 36%);
 }
@@ -47,18 +51,29 @@ p, li {
 	padding: 10px;
 	border-radius: 12px;
 	margin-top: 25px;
+    padding-left: 1.5em;
 }
 
 #prep-time ul {
     margin: 10px 0 0 20px;
 }
 
-#prep-time li strong {
-    color: hsl(332, 51%, 32%);
-}
-
 #prep-time ul li::marker {
   color:hsl(332, 51%, 32%);
+}
+
+#ingredients {
+    margin-top: 25px;
+    border-bottom: 1px solid #f3e5d8;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+#instructions {
+    margin-top: 25px;
+    border-bottom: 1px solid #f3e5d8;
+    padding-bottom: 1em; 
+    margin-bottom: 1em;
 }
 
 ol li:nth-child(1)::marker {
@@ -86,10 +101,13 @@ ol li:nth-child(6)::marker {
     font-weight: bold;
 }
 
-
-
 ul, ol {
     margin-left: 20px;    
+}
+
+li {
+    padding-left: 1.5em;
+    list-style-position: outside;
 }
 
 ul li, ol li {
@@ -102,7 +120,7 @@ ul li::marker{
 
 ol li strong {
     font-weight: 600;
-    color: hsl(30, 10%, 20%);
+    color: hsl(30, 10%, 34%);
 }
 
 #nutrition {
@@ -132,10 +150,9 @@ ol li strong {
 .value {
     color: hsl(14, 45%, 36%);
     font-weight: bold;
-    
 }
 
 .attribution {
-    text-align: center;
+    text-align: 50%;
     margin-bottom: 2.5%;
 }

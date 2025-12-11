@@ -1,56 +1,83 @@
-# CTI-110 Final Project - Recipe page
+# CTI-110 Final Project - Simple Omelette Recipe Page
 
-![Design preview for the Recipe page coding challenge](./preview.jpg)
+## Table of contents
 
-## Welcome! 👋
+- [Overview](#overview)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Challenges & Solutions](#challenges--solutions)
+- [Author](#author)
 
-Thanks for checking out this front-end coding challenge.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+A responsive recipe page for a Simple Omelette Recipe built with semantic HTML5 and CSS. The page features a clean, modern design with proper typography, color scheme, and layout that adapts to different screen sizes.
 
-## The challenge
+### Links
 
-Your challenge is to build out this recipe page and get it looking as close to the design as possible.
+- Repository URL: [CTI-110_Final-Project](https://github.com/eleyob2/CTI-110_Final-Project)
+- Live Site: Open `index.html` in your browser
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+## My process
 
-## Where to find everything
+### Built with
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- Semantic HTML5 markup
+- CSS custom properties and variables
+- Flexbox for layout
+- CSS Grid for the nutrition table
+- Google Fonts (Young Serif & Outfit)
+- Responsive design principles
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### What I learned
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+This project reinforced several key web development concepts:
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+**Semantic HTML Structure:**
+```html
+<section id="nutrition">
+  <h2>Nutrition</h2>
+  <div class="table">
+    <div class="row">
+      <span class="label">Calories</span>
+      <span class="value">277kcal</span>
+    </div>
+  </div>
+</section>
+```
+Using proper semantic elements like `<main>`, `<section>`, and structured lists improves accessibility and SEO.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+**CSS Styling for Typography:**
+```css
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    color: black;
+}
 
-## Building your project
+p, li {
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+```
+Proper font selection and line-height creates better readability and visual hierarchy.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+**Styling List Markers:**
+```css
+#prep-time ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+```
+Using the `::marker` pseudo-element allows for custom styling of list item markers.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### Challenges & Solutions
 
-## Deploying your project
+- **Custom color scheme:** Implemented HSL color values for consistent and accessible color choices throughout the design
+- **Typography balance:** Combined serif fonts for headings with sans-serif for body text to create visual interest while maintaining readability
+- **Content organization:** Used semantic sections and proper heading hierarchy to structure recipe information logically
 
-Deploy your site as a live site through GitHub Pages.
+## Author
 
-## Create a custom `README.md`
-
-You must overwrite this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit both a live site link and repository link on Blackboard for grading. 
-
-**Have fun building!** 🚀
+- **Elnatan Teaghes** - CTI-110 Final Project
+- GitHub: [@eleyob2](https://github.com/eleyob2)
